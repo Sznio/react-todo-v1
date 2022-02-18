@@ -1,0 +1,81 @@
+/*Style resets*/
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+/*Define variables*/
+
+:root {
+      --backGroundColor: #121212;
+      --foreGroundColor1: rgba(255, 255, 255, 0.07);
+      --fontColor: #ccc;
+      --accentColor: rgba(64, 64, 255, 1);
+}
+
+/*Body styles*/
+body {
+      background-color: var(--backGroundColor);
+      color: var(--fontColor);
+      
+}
+
+div.wrap {
+      width: 90%;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+
+
+nav.navBar ul {
+      margin-top: 30px;
+      display: flex;
+      height: 70px;
+      margin-right: 90%;
+      width: 30%;
+      justify-content: space-around;
+      list-style:none;
+}
+
+nav.navBar li {
+      position: relative;
+      flex-grow: 1;
+      margin: 0px 10px;
+      height: 100%;
+      background-color: var(--foreGroundColor1);
+}
+
+nav.navBar ul li a {
+      transition: 0.3s;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      line-height: 70px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      display: block;
+      text-align: center;
+      color: var(--fontColor);
+      text-decoration: none;
+      border-bottom: 6px solid transparent;
+}
+nav.navBar ul li a.active {
+      color: var(--accentColor);
+      border-bottom: 6px solid var(--accentColor);
+}
+
+@media(max-width: 800px){
+      nav.navBar ul{ 
+            width:70%;
+      }
+}
+
+
+@media(max-width: 400px){
+      nav.navBar ul{ 
+            width:100%;
+      }
+}

@@ -1,0 +1,39 @@
+ul.todoList {
+      list-style: none;
+}
+ul.todoList * {
+      color: var(--fontColor);
+}
+ul.todoList h3 {
+      text-transform: uppercase;
+}
+li.task {
+      border-top: var(--accentColor) 4px solid;
+      
+      
+      min-height: 40px;
+      margin: 25px auto;
+      padding: 15px;
+      background-color: var(--foreGroundColor1);
+      width: 90%;
+      position: relative;
+}
+li.task p {
+      word-wrap: break-word;
+}
+button.dismissTask {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      border-radius: 3px;
+      border: 2px solid var(--foreGroundColor1);
+      background-color: 2px solid var(--foreGroundColor1);
+      transform: translateY(-50%);
+      transition: 0.2s;
+}
+
+button.dismissTask:hover{
+      border-color:var(--accentColor);
+}

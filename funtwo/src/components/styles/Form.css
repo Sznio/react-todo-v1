@@ -1,0 +1,36 @@
+.addForm div.inputWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+}
+.addForm input {
+      background-color: var(--foreGroundColor1);
+      border: 2px solid var(--fontColor);
+      color: var(--fontColor);
+      display: block;
+      padding: 20px 10px;
+      float: left;
+}
+.addForm input:focus {
+      outline: none;
+      border-color: var(--accentColor);
+}
+.addForm button {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      clear: both;
+      display: block;
+      padding: 16px 20px;
+     
+      color: var(--fontColor);
+      border: none;
+      background-color: var(--accentColor);
+}
+.addForm label {
+      display: block;
+      color: var(--fontColor);
+}
