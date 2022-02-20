@@ -18,7 +18,7 @@ function App() {
                               <ul>
                                     <li>
                                           <NavLink to="/" exact>
-                                                Home Page
+                                                Home
                                           </NavLink>
                                     </li>
                                     <li>
